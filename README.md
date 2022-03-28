@@ -95,7 +95,7 @@ github -> 로컬 시 clone과 파일 다운 후 사용 2가지로 알고 있습�
 
 2. clone이 아닌 기존에 작업 중이던 프로젝트를 업로드하고 싶다면
     1. 해당 git 폴더로 이동
-    2. git remote origin github_repo_복사url : origin은 정확히 remote한 url의 별칭입니다. 마음대로 정하셔도 됩니다.
+    2. git remote add origin github_repo_복사url : origin은 정확히 remote한 url의 별칭입니다. 마음대로 정하셔도 됩니다.
         나중에 remote 해놓은 url에 대해 알아야 한다면 git remote 입력 시 등록했던 별칭이 보입니다.
     3. git push origin master 또는 git push -u origin master : 저기서 origin 대신 github repo url로 입력해도 됩니다.
         git push remote별칭명 브랜치명 으로 입력하며 2번째 명령어의 -u 설정은 기본 push를 같은 url로 유지하겠다는 뜻입니다.
@@ -174,7 +174,7 @@ git revert 해쉬코드 : 새로운 커밋을 하고 복구시킵니다. 이 작
 클라우드 명령어
 git clone url링크 : github 뿐만 아니라 다른 url로 클라우드 시스템을 제공하는 다른 프로젝트에 대해서도 사용가능합니다.
 
-git remote 별칭명 url링크 : 다운받거나 추가적으로 업로드 시 사용되는 별칭 생성을 위한 명령어
+git remote add 별칭명 url링크 : 다운받거나 추가적으로 업로드 시 사용되는 별칭 생성을 위한 명령어
 
 git push -옵션 별칭명 브랜치명 : 로컬에서 작업한 내용을 업로드 하는 기능으로 commit한 내용만 github로 업로드 됩니다.
     -u : push의 default로 1번 사용하면 다음부턴 git push로만 간단하게 업로드 가능합니다.
